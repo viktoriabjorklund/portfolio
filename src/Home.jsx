@@ -23,15 +23,15 @@ function Home() {
         <div className="absolute top-0 left-0 w-full h-full z-10">
           <Navbar />
 
-          <div className="text-left mt-72 xl:text-2xl 2xl:text-2xl pt-24 px-12 xl:w-3/5 2xl:w-2/5">
+          <div className="text-base text-center xl:text-left mt-8 xl:mt-72 xl:text-2xl 2xl:text-2xl pt-24 xl:px-12 xl:w-3/5 2xl:w-2/5">
             I'm a fourth-year student in the Media Technology program at KTH,
             currently pursuing a Master's degree in Interactive Media Technology.
             I'm passionate about expanding my skills, and this page showcases
             some of my current expertise through a selection of projects.
           </div>
 
-          <div className="h-80" />
-          <div className="h-80" />
+          <div className="h-20 xl:h-80" />
+          <div className="xl:h-80" />
           
           <SkillsSection/>
           <ProjectSection/>
@@ -43,6 +43,29 @@ function Home() {
         alt="vatten"
         className="w-full h-auto block rotate-180"
         style={{ marginTop: '-4px' }}
+      />
+      <img
+        src="/vatten.jpg"
+        alt="vatten"
+        className="w-full h-auto block mt-[-4px]"
+      />
+
+      <img
+        src="/vatten.jpg"
+        alt="vatten"
+        className="w-full h-auto block rotate-180 mt-[-4px]"
+      />
+
+      <img
+        src="/vatten.jpg"
+        alt="vatten"
+        className="w-full h-auto block mt-[-4px]"
+      />
+
+      <img
+        src="/vatten.jpg"
+        alt="vatten"
+        className="w-full h-auto block rotate-180 mt-[-4px]"
       />
     </div>
   );
