@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import ProjectItem from './ProjectItem';
 import ProjectItemRight from './ProjectItemRight';
+import BottomBar from './BottomBar';
 
 function ProjectSection(){
     const navigate = useNavigate();
@@ -58,43 +59,66 @@ function ProjectSection(){
             </div>
         </div>
         ÄNDRA HÄR: ta bort md:flex-row + justify-evenly, lägg gap för mellanrum */
+
+        <div className="relative w-full">
+        {/* dimmad bakgrund */}
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(0,0,0,0.5)_10%,rgba(0,0,0,0.4)_80%,transparent_99%)]"></div>
+
+
+
+
         <div className=' flex flex-col xl:text-2xl xl:mt-20 2xl:mt-32'>
-            <p className='text-center'>projects</p>
+            <p className='text-3xl text-center mb-24 font-semi-bold'>projects</p>
             <div className='flex flex-col md:flex-col justify-evenly w-full xl:text-xl xl:mt-8'>
-            {projects.map((project, index) => (
-                <div key={index} className="group">
-                    <p className="font-bold cursor-pointer">{project.title}</p>
-                    
-                </div>
-                ))}
+
                 <ProjectItem
+                  name="loadtester Angular UI"
+                  description="Rewrote an old Vaadin UI to Angular during a summer internship."
+                  image="/public/loadtester_home.png"
+                  link="/loadtester"
+                  imgW={360}
+                  imgH={240}
+                />
+
+                <ProjectItemRight
                   name="let me cook"
-                  description="Created a full-stack social recipe website using agile methods."
+                  description="Deveoped a full-stack social recipe website using agile methods."
                   image="public/Group 24.svg"
                   link="/lemme-cook"
                   imgW={360}
                   imgH={240}
                 />
 
-                <ProjectItemRight
+                <ProjectItem
                   name="pitch imperfect"
-                  description="Created a full-stack social recipe website using agile methods."
+                  description="Created a pitch recognition application using Kotlin and Furhat."
                   image="/public/furhat.png"
                   link="/pitch-imperfect"
                   imgW={360}
                   imgH={240}
                 />
 
-                <ProjectItem
+                <ProjectItemRight
                   name="plant care app"
-                  description="Created a full-stack social recipe website using agile methods."
+                  description="Created a prototype for a plant care mobile application."
                   image="public/2plants.svg"
                   link="/plant-care"
                   imgW={360}
                   imgH={350}
                 />
 
+                <ProjectItem
+                  name="mingle mixer"
+                  description="Developed a drink website, tailored for finding and saving drinks"
+                  image="/public/minglemixer_home.png"
+                  link="/mingle-mixer"
+                  imgW={360}
+                  imgH={240}
+                />
+
+
             </div>
+        </div>
         </div>
 
         )  

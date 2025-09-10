@@ -26,7 +26,7 @@ function ProjectHeader({title, description}) {
             };
           }, []);
     return (
-        <div className=' flex flex-col w-1/3'>
+        <div className=' flex flex-col'>
         <p className='font-bold text-3xl -mt-16'>{title}</p>
         
         <div

@@ -23,7 +23,7 @@ function Recipe_details() {
                 />
 
                 <div className='-mt-24 ml-72'>
-                    <img src="public/Group 24.svg" 
+                    <img src="public/lemmecook1.png" 
                     className='flex justify-end'
                 />
                 </div>
@@ -50,19 +50,25 @@ function Recipe_details() {
             </div>
             <div className='flex flex-row ml-0 mt-12'>
             <div className=''>
-                    <img src="public/Group 24.svg" 
+                    <img src="public/lemmecook2.png" 
                     className='flex justify-end'
                 />
                 </div>
 
                 <div className=''>
-                    <img src="public/Group 24.svg" 
+                    <img src="public/lemmecook3.png" 
                     className='flex justify-end'
                 />
                 </div>
 
                 <div className=''>
-                    <img src="public/Group 24.svg" 
+                    <img src="public/lemmecook4.png" 
+                    className='flex justify-end'
+                />
+                </div>
+
+                <div className=''>
+                    <img src="public/lemmecook5.png" 
                     className='flex justify-end'
                 />
                 </div>

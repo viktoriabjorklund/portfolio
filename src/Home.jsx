@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import SkillsSection from './skills_section';
 import ProjectSection from './projects_section';
+import BottomBar from './BottomBar';
 
 
 
@@ -23,7 +24,7 @@ function Home() {
         <div className="absolute top-0 left-0 w-full h-full z-10">
           <Navbar />
 
-          <div className="text-base text-center xl:text-left mt-8 xl:mt-72 xl:text-2xl 2xl:text-2xl pt-24 xl:px-12 xl:w-3/5 2xl:w-2/5">
+          <div className="text-base text-center xl:text-left mt-8 xl:mt-72 xl:text-2xl 2xl:text-2xl pt-24 xl:px-12 xl:w-3/5 2xl:w-2/5 2xl:pl-32">
             I'm a fourth-year student in the Media Technology program at KTH,
             currently pursuing a Master's degree in Interactive Media Technology.
             I'm passionate about expanding my skills, and this page showcases
@@ -35,6 +36,7 @@ function Home() {
           
           <SkillsSection/>
           <ProjectSection/>
+          <BottomBar/>
         </div>
       </div>
 
@@ -67,6 +69,25 @@ function Home() {
         alt="vatten"
         className="w-full h-auto block rotate-180 mt-[-4px]"
       />
+
+      <img
+        src="/vatten.jpg"
+        alt="vatten"
+        className="w-full h-auto block mt-[-4px]"
+      />
+      <div className='3xl:hidden'>
+      <img
+        src="/vatten.jpg"
+        alt="vatten"
+        className="w-full h-auto block rotate-180 mt-[-4px]"
+      />
+      
+        <img
+          src="/vatten.jpg"
+          alt="vatten"
+          className="w-full h-auto block mt-[-4px]"
+        />
+      </div>
     </div>
   );
 }

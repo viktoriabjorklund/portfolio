@@ -12,6 +12,9 @@ import Home from './Home.jsx';
 import Recipe_details from './lemme_cook.jsx';
 import PitchImperfect from './pitch_imperfect.jsx';
 import PlantCare from './plant_care.jsx';
+import Loadtester from './giesecke.jsx';
+import MingleMixer from './minglemixer.jsx';
+import LemmeCook from './LemmeCook.jsx';
 // import reportWebVitals from './reportWebVitals'; // Only if needed
 
 function Layout() {
@@ -27,9 +30,11 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="lemme-cook" element={<Recipe_details />} />
+          <Route path="lemme-cook" element={<LemmeCook />} />
           <Route path="pitch-imperfect" element={<PitchImperfect />} />
           <Route path="plant-care" element={<PlantCare />} />
+          <Route path="loadtester" element={<Loadtester />} />
+          <Route path="mingle-mixer" element={<MingleMixer />} />
         </Route>
       </Routes>
     </BrowserRouter>
