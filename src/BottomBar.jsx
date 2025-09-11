@@ -40,7 +40,7 @@ function BottomBar() {
         {/* Fun fact */}
         <span className="font-semibold">Fun fact!</span> 
         <p className="max-w-xl mx-auto mb-4">
-          Background image is a
+          The background image is a
           photo of Skellig Michael which I photographed during a roadtrip in
           Ireland.
         </p>

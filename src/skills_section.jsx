@@ -44,7 +44,7 @@ import React, { useEffect, useRef, useState } from 'react';
     return (
         <>
         <div
-            className="text-left xl:text-xl px-6 xl:px-12 xl:mt-36 2xl:mt-[30%] w-2/5 2xl:pl-32"
+            className="text-left xl:text-xl px-6 xl:px-12 mt-8 xl:mt-36 2xl:mt-[500px] 2xl:pl-32"
             ref={skillsRef}
         >
             skills
