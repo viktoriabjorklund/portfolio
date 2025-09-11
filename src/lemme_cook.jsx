@@ -23,7 +23,7 @@ function Recipe_details() {
                 />
 
                 <div className='-mt-24 ml-72'>
-                    <img src="public/lemmecook1.png" 
+                    <img src="/assets/lemmecook1.png" 
                     className='flex justify-end'
                 />
                 </div>

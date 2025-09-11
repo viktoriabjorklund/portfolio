@@ -23,7 +23,7 @@ function PlantCare() {
                 />
 
                 <div className='-mt-16 ml-80'>
-                    <img src="public/2plants.svg" 
+                    <img src="assets/2plants.svg" 
                     className='flex justify-end w-[400px]'
                 />
                 </div>

@@ -55,7 +55,7 @@ function LemmeCook() {
             {/* Höger kolumn: huvudbild */}
             <div className="flex w-1/2 justify-center">
               <img
-                src="public/lemmecook1.png"
+                src="/assets/lemmecook1.png"
                 className="w-[600px] h-auto"
                 alt="mingle mixer home"
               />
@@ -64,10 +64,10 @@ function LemmeCook() {
   
           {/* BOTTOM: tre centrerade bilder */}
           <div className="flex flex-wrap gap-6 mt-36">
-            <img src="public/lemmecook2.png" className="w-[650px] h-auto" />
-            <img src="public/lemmecook3.png" className="w-[650px] h-auto" />
-            <img src="public/lemmecook4.png" className="w-[650px] h-auto" />
-            <img src="public/lemmecook5.png" className="w-[650px] h-auto" />
+            <img src="assets/lemmecook2.png" className="w-[650px] h-auto" />
+            <img src="assets/lemmecook3.png" className="w-[650px] h-auto" />
+            <img src="assets/lemmecook4.png" className="w-[650px] h-auto" />
+            <img src="assets/lemmecook5.png" className="w-[650px] h-auto" />
             </div>
 
 

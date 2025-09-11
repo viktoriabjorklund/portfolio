@@ -23,7 +23,7 @@ function PitchImperfect() {
                 />
 
                 <div className='-mt-32 ml-72'>
-                    <img src="/public/furhat.svg" 
+                    <img src="/assets/furhat.svg" 
                     className='flex justify-end w-[450px]'
                 />
                 </div>

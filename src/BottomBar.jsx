@@ -46,7 +46,7 @@ function BottomBar() {
         </p>
   
         {/* Footer-credit */}
-        <p className="font-bold text-sm opacity-80 mt-10 text-amber-300">Developed by Viktoria Björklund</p>
+        <p className="font-bold text-sm opacity-80 mt-10 text-amber-200">Developed by Viktoria Björklund</p>
       </div>
       </div>
     );

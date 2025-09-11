@@ -27,7 +27,7 @@ function Home() {
     <div className="w-full overflow-x-hidden text-white">
       <div className="relative w-full">
         <img
-          src="/background.png"
+          src="/assets/background.png"
           alt="background"
           className="w-full h-auto block"
         />
@@ -49,7 +49,7 @@ function Home() {
           <section id="projects">
             <ProjectSection/>
           </section>
-          
+
           <section id="contact">
             <BottomBar/>
           </section>
@@ -57,44 +57,44 @@ function Home() {
       </div>
 
       <img
-        src="/vatten.jpg"
+        src="/assets/vatten.jpg"
         alt="vatten"
         className="w-full h-auto block rotate-180"
         style={{ marginTop: '-4px' }}
       />
       <img
-        src="/vatten.jpg"
+        src="/assets/vatten.jpg"
         alt="vatten"
         className="w-full h-auto block mt-[-4px]"
       />
 
       <img
-        src="/vatten.jpg"
+        src="/assets/vatten.jpg"
         alt="vatten"
         className="w-full h-auto block rotate-180 mt-[-4px]"
       />
 
       <img
-        src="/vatten.jpg"
+        src="/assets/vatten.jpg"
         alt="vatten"
         className="w-full h-auto block mt-[-4px]"
       />
 
       <img
-        src="/vatten.jpg"
+        src="/assets/vatten.jpg"
         alt="vatten"
         className="w-full h-auto block rotate-180 mt-[-4px]"
       />
 
       <img
-        src="/vatten.jpg"
+        src="/assets/vatten.jpg"
         alt="vatten"
         className="w-full h-auto block mt-[-4px]"
       />
 
       <div className=''>
       <img
-        src="/vatten.jpg"
+        src="/assets/vatten.jpg"
         alt="vatten"
         className="w-full h-auto block rotate-180 mt-[-4px]"
       />
@@ -102,7 +102,7 @@ function Home() {
       
       <div className=''>
         <img
-          src="/vatten.jpg"
+          src="/assets/vatten.jpg"
           alt="vatten"
           className="w-full h-auto block mt-[-4px]"
         />
@@ -110,7 +110,7 @@ function Home() {
 
       <div className=''>
       <img
-        src="/vatten.jpg"
+        src="/assets/vatten.jpg"
         alt="vatten"
         className="w-full h-auto block rotate-180 mt-[-4px]"
       />

@@ -9,7 +9,6 @@ import ScrollToTop from './ScrollToTop';
 import './index.css';
 
 import Home from './Home.jsx';
-import Recipe_details from './lemme_cook.jsx';
 import PitchImperfect from './pitch_imperfect.jsx';
 import PlantCare from './plant_care.jsx';
 import Loadtester from './giesecke.jsx';

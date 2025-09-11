@@ -52,7 +52,7 @@ function MingleMixer() {
             {/* Höger kolumn: huvudbild */}
             <div className="flex w-1/2 justify-center">
               <img
-                src="public/minglemixer_home.png"
+                src="assets/minglemixer_home.png"
                 className="w-[600px] h-auto"
                 alt="mingle mixer home"
               />
@@ -61,9 +61,9 @@ function MingleMixer() {
   
           {/* BOTTOM: tre centrerade bilder */}
           <div className="flex justify-center gap-2 mt-36 -ml-24">
-            <img src="public/minglemixer_details.png" className="w-[470px] h-auto" alt="mingle mixer screen 1" />
-            <img src="public/minglemixer_resultat.png" className="w-[470px] h-auto" alt="mingle mixer screen 2" />
-            <img src="public/minglemixer_favorites.png" className="w-[470px] h-auto" alt="mingle mixer screen 3" />
+            <img src="assets/minglemixer_details.png" className="w-[470px] h-auto" alt="mingle mixer screen 1" />
+            <img src="assets/minglemixer_resultat.png" className="w-[470px] h-auto" alt="mingle mixer screen 2" />
+            <img src="assets/minglemixer_favorites.png" className="w-[470px] h-auto" alt="mingle mixer screen 3" />
           </div>
   
           {/* Bottom nav */}
