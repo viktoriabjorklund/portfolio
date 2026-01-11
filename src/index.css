@@ -25,6 +25,7 @@ a:hover {
 }
 
 html, body, #root {
+  background: #000;
   margin: 0;
   padding: 0;
   height: 100%;
