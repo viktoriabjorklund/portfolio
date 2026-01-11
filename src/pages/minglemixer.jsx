@@ -1,9 +1,7 @@
-import Navbar from './navbar';
-import './App.css';
-import DetailsNavbar from './details_navbar';
-import NavbarBottom from './navbar_bottom';
-import { useEffect, useRef, useState } from 'react';
-import ProjectHeader from './project_header';
+import '../App.css';
+import DetailsNavbar from '../components/details_navbar';
+import NavbarBottom from '../components/navbar_bottom';
+import ProjectHeader from '../components/project_header';
 
 
 function MingleMixer() {

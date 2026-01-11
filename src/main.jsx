@@ -1,17 +1,17 @@
 import React, { StrictMode, useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom';
-import ScrollToTop from './ScrollToTop';
+import ScrollToTop from './functions/ScrollToTop.jsx';
 
 import './index.css';
 
-import Home from './Home.jsx';
-import PitchImperfect from './pitch_imperfect.jsx';
-import PlantCare from './plant_care.jsx';
-import Loadtester from './giesecke.jsx';
-import MingleMixer from './minglemixer.jsx';
-import LemmeCook from './LemmeCook.jsx';
-import Rentify from './rentify.jsx';
+import Home from './pages/Home.jsx';
+import PitchImperfect from './pages/pitch_imperfect.jsx';
+import PlantCare from './pages/plant_care.jsx';
+import Loadtester from './pages/giesecke.jsx';
+import MingleMixer from './pages/minglemixer.jsx';
+import LemmeCook from './pages/LemmeCook.jsx';
+import Rentify from './pages/rentify.jsx';
 
 function Layout() {
   const [loading, setLoading] = useState(true);

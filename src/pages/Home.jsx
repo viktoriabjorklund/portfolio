@@ -1,10 +1,10 @@
-import Navbar from './navbar';
-import './App.css';
+import Navbar from '../components/navbar';
+import '../App.css';
 import { useEffect, useState } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
-import SkillsSection from './skills_section';
-import ProjectSection from './projects_section';
-import BottomBar from './BottomBar';
+import { useLocation } from 'react-router-dom';
+import SkillsSection from '../components/skills_section';
+import ProjectSection from '../components/projects_section';
+import BottomBar from '../components/BottomBar';
 
 function Home() {
   const location = useLocation();
