@@ -15,7 +15,7 @@ import React, { useEffect, useRef, useState } from 'react';
         },
         {
             category: 'CI/CD',
-            skills: ['Git', 'Docker'],
+            skills: ['Git', 'BitBucket', 'Docker', 'Jenkins'],
           },
 
       ];
@@ -44,11 +44,11 @@ import React, { useEffect, useRef, useState } from 'react';
     return (
         <>
         <div
-            className="text-left xl:text-xl px-6 xl:px-12 mt-8 xl:mt-36 2xl:mt-[500px] 2xl:pl-32"
+            className="text-2xl text-left xl:text-xl px-6 xl:px-12 mt-54 xl:mt-36 2xl:mt-[500px] 2xl:pl-32"
             ref={skillsRef}
         >
             skills
-            <div className="w-[240px] lg:w-[650px] overflow-hidden">
+            <div className="w-[100%] lg:w-[650px] overflow-hidden">
             <div
                 className={`border-t border-white transition-transform duration-1000 ease-out origin-left transform ${
                 showLine ? 'scale-x-100' : 'scale-x-0'
@@ -57,16 +57,17 @@ import React, { useEffect, useRef, useState } from 'react';
             </div>
         </div>
 
-        <div className="mt-2 text-left text-xs xl:text-xl flex flex-row px-6 xl:px-12 gap-8 xl:gap-16 2xl:pl-32">
+        <div className="mt-2 text-left text-xs xl:text-xl flex flex-col xl:flex-row px-6 xl:px-12 gap-8 xl:gap-16 2xl:pl-32">
         {skillsData.map((section, index) => (
-            <div key={index} className="flex flex-col">
-            <p className="mb-1 xl:mb-4 font-bold">{section.category}</p>
+            <div key={index} className="flex flex-row flex-wrap xl:flex-col">
+            <p className="w-full mb-1 xl:mb-4 font-bold text-xl">{section.category}</p>
             {section.skills.map((skill, idx) => (
-                <p key={idx} className="mb-1 xl:mb-3">{skill}</p>
+                <p key={idx} className="mr-2 mb-1 xl:mr-0 xl:mb-3 text-lg">{skill}</p>
             ))}
             </div>
         ))}
         </div>
+
 
         </>
     );

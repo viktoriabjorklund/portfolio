@@ -51,12 +51,11 @@ function Loadtester() {
                         </div>
                 </div>
 
-    {/* Höger kolumn: bilder */}
-    <div className="flex flex-col w-1/2 gap-8 items-center">
-        <img src="assets/loadtester_home.png" className="w-96 h-auto" alt="loadtester home" />
-        <img src="assets/loadtester_config.png" className="w-96 h-auto" alt="loadtester home" />
-    </div>
-    </div>
+            <div className="flex flex-col w-1/2 gap-8 items-center">
+                <img src="assets/loadtester_home.png" className="w-[400px] h-auto 2xl:w-[500px]" alt="loadtester home" />
+                <img src="assets/loadtester_config.png" className="w-[400px] h-auto 2xl:w-[500px]" alt="loadtester home" />
+            </div>
+            </div>
             <NavbarBottom/>
         </div>
         </div>

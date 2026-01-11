@@ -15,7 +15,7 @@ function LemmeCook() {
         </div>
   
         {/* Content */}
-        <div className="flex flex-col text-left ml-24">
+        <div className="flex flex-col text-left ml-24 mr-24">
           {/* TOP: vänster text, höger bild */}
           <div className="flex flex-row items-start gap-12">
             {/* Vänster kolumn */}
@@ -56,19 +56,19 @@ function LemmeCook() {
             <div className="flex w-1/2 justify-center">
               <img
                 src="/assets/lemmecook1.png"
-                className="w-[600px] h-auto"
+                className="w-[600px] 2xl:w-[800px] h-auto"
                 alt="mingle mixer home"
               />
             </div>
           </div>
   
           {/* BOTTOM: tre centrerade bilder */}
-          <div className="flex flex-wrap gap-6 mt-36">
-            <img src="assets/lemmecook2.png" className="w-[650px] h-auto" />
-            <img src="assets/lemmecook3.png" className="w-[650px] h-auto" />
-            <img src="assets/lemmecook4.png" className="w-[650px] h-auto" />
-            <img src="assets/lemmecook5.png" className="w-[650px] h-auto" />
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-36 place-items-center">
+            <img src="assets/lemmecook2.png" className="w-[650px] 2xl:w-[800px] h-auto" />
+            <img src="assets/lemmecook3.png" className="w-[650px] 2xl:w-[800px] h-auto" />
+            <img src="assets/lemmecook4.png" className="w-[650px] 2xl:w-[800px] h-auto" />
+            <img src="assets/lemmecook5.png" className="w-[650px] 2xl:w-[800px] h-auto" />
+          </div>
 
 
   

@@ -1,10 +1,7 @@
-import React from 'react';
-import { StrictMode } from 'react';
+import React, { StrictMode, useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
-
 
 import './index.css';
 
@@ -14,18 +11,50 @@ import PlantCare from './plant_care.jsx';
 import Loadtester from './giesecke.jsx';
 import MingleMixer from './minglemixer.jsx';
 import LemmeCook from './LemmeCook.jsx';
-// import reportWebVitals from './reportWebVitals'; // Only if needed
+import Rentify from './rentify.jsx';
 
 function Layout() {
-  return (
-    <Outlet/>
-  );
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
+
+  useEffect(() => {
+    setLoading(true);
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  if (loading) {
+    const wrapperClasses = `
+      w-full h-screen flex items-center justify-center
+      ${isHome ? "bg-[#9DD1F9]" : "bg-gradient-to-b from-[#659FC9] to-white h-16"}
+    `;
+
+    const spinnerClasses = `
+      w-16 h-16 border-4 border-t-transparent rounded-full animate-spin
+      ${isHome ? "border-white" : "border-[#659FC9]"}
+    `;
+
+    return (
+      <div className={wrapperClasses}>
+        <div className={spinnerClasses}></div>
+      </div>
+    );
+  }
+
+  return <Outlet />;
 }
+
 
 export default function App() {
   return (
     <BrowserRouter>
-    <ScrollToTop />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -34,6 +63,7 @@ export default function App() {
           <Route path="plant-care" element={<PlantCare />} />
           <Route path="loadtester" element={<Loadtester />} />
           <Route path="mingle-mixer" element={<MingleMixer />} />
+          <Route path="rentify" element={<Rentify />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -46,5 +76,3 @@ root.render(
     <App />
   </StrictMode>
 );
-
-// reportWebVitals(); // Uncomment if you're importing it

@@ -28,8 +28,11 @@ function MingleMixer() {
               <div className="mt-8">
                 <p className="font-bold text-xl mb-2">description</p>
                 <p>
-                  This web application aimed to solve the problem one can often
-                  face which is – what should I cook for dinner today? …
+                This web application allows users to explore and save different drinks. 
+                By entering a selection of ingredients, the app suggests drinks that can 
+                be made using all of them. Favorite drinks can be saved and stored through 
+                Firebase for future access. The project was carried out collaboratively by 
+                me and three other team members.
                 </p>
               </div>
   
@@ -53,7 +56,7 @@ function MingleMixer() {
             <div className="flex w-1/2 justify-center">
               <img
                 src="assets/minglemixer_home.png"
-                className="w-[600px] h-auto"
+                className="w-[600px] 2xl:w-[700px] h-auto"
                 alt="mingle mixer home"
               />
             </div>
@@ -61,9 +64,9 @@ function MingleMixer() {
   
           {/* BOTTOM: tre centrerade bilder */}
           <div className="flex justify-center gap-2 mt-36 -ml-24">
-            <img src="assets/minglemixer_details.png" className="w-[470px] h-auto" alt="mingle mixer screen 1" />
-            <img src="assets/minglemixer_resultat.png" className="w-[470px] h-auto" alt="mingle mixer screen 2" />
-            <img src="assets/minglemixer_favorites.png" className="w-[470px] h-auto" alt="mingle mixer screen 3" />
+            <img src="assets/minglemixer_details.png" className="w-[470px] 2xl:w-[600px] h-auto" alt="mingle mixer screen 1" />
+            <img src="assets/minglemixer_resultat.png" className="w-[470px] 2xl:w-[600px] h-auto" alt="mingle mixer screen 2" />
+            <img src="assets/minglemixer_favorites.png" className="w-[470px] 2xl:w-[600px] h-auto" alt="mingle mixer screen 3" />
           </div>
   
           {/* Bottom nav */}

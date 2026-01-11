@@ -1,6 +1,12 @@
 // src/projects.js
 export const projects = [
     {
+      title: "rentify",
+      description: "Built a fullstack project utilizing rental of tools",
+      link: "/rentify",
+      image: "/assets/rentifyhome.png"
+    },
+    {
       title: "loadtester Angular UI",
       description: "Rewrote an old Vaadin UI to Angular during a summer internship.",
       link: "/loadtester",
